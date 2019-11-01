@@ -1,7 +1,7 @@
 @echo off
-set targetdir=\\172.25.250.112\bethge_recordings
-set filename=mysqlbackup\weekly_1.sql
-set tempfile=d:\%filename%
+set targetdir=\\172.25.250.112\bethge_recordings\mysqlbackup
+set filename=weekly_1.sql
+set tempfile=d:\mysqlbackup\%filename%
 set targetfile=%targetdir%\%filename%
 echo Backing up to temporary file %tempfile%
 call mysqlbackup.bat > %tempfile%
